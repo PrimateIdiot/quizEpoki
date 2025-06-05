@@ -120,4 +120,12 @@ nextButton.addEventListener("click", () => {
   }
 });
 
+    document.getElementById('theme-toggle-checkbox').addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('dark-theme');
+      } else {
+        document.body.classList.remove('dark-theme');
+      }
+    });
+
 startQuiz();
